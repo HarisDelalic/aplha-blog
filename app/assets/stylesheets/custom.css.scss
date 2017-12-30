@@ -38,6 +38,18 @@ $navbar-default-bg: #08088A;
   margin-top: 0;
 }
 
+.article-title {
+  color: #08088A;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 footer {
   margin-bottom: 10px;
   padding-top: 5px;

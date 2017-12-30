@@ -1,0 +1,39 @@
+<% if @article.errors.any? %>
+  <ul>
+    <% @article.errors.full_messages.each do |msg| %>
+      <li>
+        <%= msg %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @article do |f| %>
+  <table>
+    <tr>
+      <td>
+        <%= f.label :title %>
+      </td>
+      <td style="width: 200px">
+        <%= f.text_field :title, :size => "31" %>
+      </td>
+      </p>
+    </tr>
+    <tr>
+      <td>
+        <%= f.label :description %>
+      </td>
+      <td>
+        <%= f.text_area :description, cols: "30", rows: "10" %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        &nbsp;
+      </td>
+      <td>
+        <%= f.submit %>
+      </td>
+    </tr>
+  </table>
+<% end %>

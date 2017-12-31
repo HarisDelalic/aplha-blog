@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # resources :pages;
   get 'pages/home'
   get 'pages/about'
+  root to: 'articles#index'
 end

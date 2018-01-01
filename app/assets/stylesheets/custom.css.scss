@@ -61,8 +61,13 @@ footer small {
 }
 
 nav ul li {
-  float: right;
+  float: left;
   margin-right: 15px;
+}
+
+.listing {
+  list-style: none;
+  padding-left: 0;
 }
 
 @import "bootstrap-sprockets";

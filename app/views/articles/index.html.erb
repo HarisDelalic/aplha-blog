@@ -1,4 +1,9 @@
+<div align="center">
+  <%= will_paginate @articles %>
+</div>
 <%= render 'articles/articles', obj: @articles %>
-
+<div align="center">
+  <%= will_paginate @articles %>
+</div>
 <%= link_to "About", pages_about_path %>
 <%= link_to "Home", pages_home_path %>
